@@ -5,7 +5,7 @@ import './CurrencyConverter.css'; // Стилі для конвертера ва
 function CurrencyConverter() {
   return (
     <div className="currency-converter">
-      <h2>Конвертер валют</h2>
+      <h2>Чіп Челендж</h2>
       <p>Обмінник валют - навчальний</p>
       <button className="convert-button">Конвертувати</button> {/* Кнопка без функціонала */}
     </div>
