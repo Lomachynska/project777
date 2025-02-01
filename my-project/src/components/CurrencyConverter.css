@@ -51,6 +51,3 @@
   margin-top: 20px; /* Додаємо відступ зверху, щоб кнопка не прилипала до інших елементів */
 }
 
-.currency-converter .convert-button:hover {
-  background-color: #707C87;
-}

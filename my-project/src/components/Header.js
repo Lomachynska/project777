@@ -5,7 +5,7 @@ import { ReactComponent as UserIcon } from '../assets/Vector.svg'; // Імпор
 function Header() {
   return (
     <div className="header">
-      <div className="logo">Логотип</div>
+      <div className="logo">Чіп Челендж</div>
       <div className="nav">
         <a href="/">Послуги</a>
         <a href="/about">Конвертор валют</a>
