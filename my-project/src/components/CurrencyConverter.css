@@ -1,0 +1,56 @@
+.currency-converter {
+  width: 100%;
+  max-width: 1366px;
+  min-height: 400px;
+  background-image: url('../assets/Rectangle2.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Центруємо контейнер */
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  margin-top: 0; /* Видалити або зменшити відступ зверху */
+}
+
+.currency-converter h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white; /* Зробимо текст світлим, щоб було видно на темному фоні */
+}
+
+.currency-converter p {
+  font-size: 16px;
+  color: white; /* Зробимо текст світлим */
+  margin-bottom: 20px;
+}
+
+.currency-converter input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /* Відступ між полем вводу та кнопкою */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.currency-converter .convert-button {
+  width: 234px; /* Ширина кнопки */
+  height: 53px; /* Висота кнопки */
+  border-radius: 4px; /* Радіус кута кнопки */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px; /* Додаємо відступ зверху, щоб кнопка не прилипала до інших елементів */
+}
+
+.currency-converter .convert-button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,90 @@
+/* Стилі для головного контейнера меню */
+.header {
+  width: 100%;
+  max-width: 1366px;
+  height: 91px; /* Висота меню */
+  background-color: #F6F7FF; /* Світлий фон */
+  background-size: cover; /* Покриває весь контейнер */
+  background-position: center; /* Центруємо зображення */
+  display: flex;
+  justify-content: space-between; /* Вирівнюємо елементи по боках */
+  align-items: center; /* Центруємо елементи по вертикалі */
+  padding: 0 20px; /* Відступи зліва та справа */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легка тінь для меню */
+  margin: 0 auto; /* Центруємо контейнер по горизонталі */
+}
+
+/* Стилі для логотипа */
+.header .logo {
+  font-size: 24px;
+  color: #1F1E25; /* Темний колір для контрасту */
+  font-weight: bold;
+}
+
+/* Стилі для навігаційних посилань */
+.header .nav {
+  display: flex;
+  gap: 20px; /* Відстань між елементами меню */
+  justify-content: center; /* Центруємо навігаційні посилання по горизонталі */
+  flex-grow: 1; /* Це дозволить контейнеру nav займати всю доступну ширину */
+}
+
+/* Стилі для навігаційних посилань */
+.header .nav a {
+  color: #707C87; /* Темний колір тексту для контрасту */
+  text-decoration: none; /* Вимикаємо підкреслення */
+  font-size: 16px;
+}
+
+/* Зміна кольору при наведенні */
+.header .nav a:hover {
+  color: #2C36F2; /* Зміна кольору тексту на #2C36F2 */
+}
+
+/* Стилі для контейнера кнопки "Особливий кабінет" */
+.header .cabinet-container {
+  display: flex;
+  align-items: center; /* Центруємо іконку та текст по вертикалі */
+  gap: 10px; /* Відстань між іконкою та текстом */
+  justify-content: flex-end; /* Вирівнюємо кнопку та текст до правого краю */
+  flex-shrink: 0; /* Зберігаємо ширину, щоб кнопка не стискалася */
+  margin-left: auto; /* Якщо потрібно, це змусить кабінет праворуч */
+}
+
+/* Стилі для кнопки "Особливий кабінет" */
+.header .cabinet-link {
+  display: flex;
+  align-items: center; /* Центруємо іконку по вертикалі */
+  justify-content: center; /* Центруємо іконку по горизонталі */
+  background-color: #007bff; /* Блакитний фон для кнопки */
+  color: white; /* Білий текст */
+  padding: 10px 20px; /* Відступи всередині кнопки */
+  border-radius: 4px; /* Радіус кута */
+  font-size: 16px;
+  text-decoration: none; /* Без підкреслення */
+  height: 100%; /* Висота кнопки на всю висоту контейнера header */
+  width: auto; /* Кнопка має автоматичну ширину */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для кнопки */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Анімація для hover */
+}
+
+/* Зміна кольору при наведенні на кнопку */
+.header .cabinet-link:hover {
+  background-color: #0056b3; /* Змінюється колір при наведенні */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Тінь при наведенні */
+}
+
+/* Стилі для іконки в кнопці */
+.header .cabinet-link svg {
+  width: 18px; /* Ширина іконки */
+  height: 18px; /* Висота іконки */
+  fill: white; /* Іконка залишається білою */
+  margin-right: 8px; /* Відступ між іконкою і текстом */
+}
+
+/* Текст "Особливий кабінет" */
+.header .cabinet-container span {
+  font-size: 16px; /* Розмір шрифту для тексту */
+  color: #1F1E25; /* Темний колір для тексту */
+  font-weight: bold;
+}

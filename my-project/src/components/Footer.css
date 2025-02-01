@@ -1,0 +1,64 @@
+/* Стилі для футера */
+.footer {
+  width: 100%;
+  max-width: 1366px; /* Максимальна ширина футера */
+  background-color: #F6F7FF; /* Світлий фон, як в хедері */
+  padding: 20px; /* Відступи всередині футера */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Тінь, щоб додати глибини */
+  margin: 0 auto; /* Центруємо футер */
+  display: flex;
+  flex-direction: column; /* Вертикальне вирівнювання елементів */
+  gap: 20px; /* Відстань між блоками */
+  align-items: center; /* Центруємо елементи по горизонталі */
+  text-align: center; /* Текст по центру */
+}
+
+/* Стилі для логотипа */
+.footer .logo {
+  font-size: 24px;
+  color: #1F1E25; /* Темний колір для логотипа */
+  font-weight: bold;
+}
+
+/* Стилі для адреси та ліцензії */
+.footer div {
+  font-size: 14px; /* Трохи менший шрифт для адреси та ліцензії */
+  color: #707C87; /* Темний колір для контрасту */
+}
+
+/* Стилі для списку послуг */
+.footer .services ul {
+  list-style: none; /* Вимикаємо стандартні маркери */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; /* Відстань між пунктами списку */
+}
+
+.footer .services ul li {
+  font-size: 16px;
+  color: #707C87; /* Темний колір для тексту */
+  cursor: pointer; /* Покажчик для елементів списку */
+  transition: color 0.3s ease;
+}
+
+.footer .services ul li:hover {
+  color: #2C36F2; /* Зміна кольору при наведенні */
+}
+
+/* Стилі для соціальних мереж */
+.footer .socials {
+  display: flex;
+  gap: 20px; /* Відстань між іконками соціальних мереж */
+  font-size: 16px;
+  color: #707C87; /* Темний колір для іконок */
+}
+
+.footer .socials span {
+  cursor: pointer; /* Покажчик на іконки */
+  transition: color 0.3s ease;
+}
+
+.footer .socials span:hover {
+  color: #2C36F2; /* Зміна кольору при наведенні */
+}
