@@ -11,26 +11,26 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin: 0 auto; /* Центруємо контейнер */
   display: flex; /* Використовуємо flexbox для вирівнювання */
-  justify-content: center; /* Центруємо елементи по горизонталі */
+  flex-direction: row; /* Розміщуємо елементи горизонтально */
+  justify-content: center; /* Центруємо обидва елементи по горизонталі */
   align-items: center; /* Центруємо елементи по вертикалі */
-  text-align: center; /* Вирівнюємо текст по центру */
-  margin-top: 2px; /* Відступ зверху */
-  flex-wrap: wrap; /* Дозволяємо елементам переноситися на новий рядок */
+  text-align: left; /* Вирівнюємо текст ліворуч */
+  gap: 5px; /* Ще більше зменшуємо відступ між текстом та зображенням */
 }
 
 /* Стилі для текстового блоку */
 .currency-converter .converter-content {
-  flex: 1; /* Текстовий блок займає залишкову ширину */
-  margin-right: 20px; /* Відступ між текстом та зображенням */
-  display: flex; /* Використовуємо flex для правильного вирівнювання елементів */
+  display: flex;
   flex-direction: column; /* Вирівнюємо елементи по вертикалі */
   justify-content: center; /* Центруємо по вертикалі */
-  align-items: center; /* Центруємо по горизонталі */
+  align-items: flex-start; /* Вирівнюємо текст ліворуч */
+  flex: 1; /* Текстовий блок займає залишкову ширину */
+  max-width: 50%; /* Додатково коригуємо ширину */
 }
 
 /* Стилі для заголовка */
 .currency-converter h2 {
-  font-size: 24px;
+  font-size: 54px;
   margin-bottom: 10px;
   color: white; /* Світлий текст для контрасту */
 }
@@ -40,15 +40,6 @@
   font-size: 16px;
   color: white; /* Світлий текст */
   margin-bottom: 20px;
-}
-
-/* Стилі для вводу */
-.currency-converter input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px; /* Відступ між полем вводу та кнопкою */
-  border: 1px solid #ccc;
-  border-radius: 4px;
 }
 
 /* Стилі для кнопки */
@@ -66,14 +57,16 @@
 
 /* Стилі для зображення */
 .currency-converter .converter-image {
-  flex-shrink: 0; /* Не дозволяємо зображенню стискатись */
-  display: flex; /* Використовуємо flexbox */
+  display: flex;
   justify-content: center; /* Центруємо зображення по горизонталі */
   align-items: center; /* Центруємо зображення по вертикалі */
+  flex: 1; /* Забезпечуємо рівномірний розподіл простору */
+  max-width: 50%; /* Додатково коригуємо ширину */
 }
 
+/* Стилі для картинки */
 .currency-converter .converter-image img {
-  max-width: 300px; /* Максимальна ширина зображення */
+  width: 320px; /* Збільшуємо трохи розмір зображення */
   height: auto; /* Автоматичне збереження пропорцій */
   border-radius: 8px; /* Радіус кута для зображення */
 }

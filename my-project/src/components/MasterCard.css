@@ -1,3 +1,4 @@
+/* Стилі для контейнера MasterCard */
 .master {
   width: 100%;
   max-width: 1366px;
@@ -12,49 +13,68 @@
   text-align: left;
 
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-
-  margin-top: 0; /* Видалити або зменшити відступ зверху */
+  justify-content: center; /* Центруємо контент всередині */
+  align-items: center; /* Вирівнюємо по вертикалі */
 }
 
+/* Контейнер для контенту, що містить і зображення, і текст */
+.master .content-container {
+  display: flex;
+  justify-content: center; /* Центруємо контент всередині */
+  align-items: center; /* Вирівнюємо по вертикалі */
+  flex-direction: row; /* Розміщуємо елементи горизонтально */
+  text-align: left; /* Текст вирівняний ліворуч */
+}
+
+/* Контейнер для зображення (по праву сторону) */
+.master .image-container {
+  margin-left: 20px; /* Відступ між зображенням і текстом */
+}
+
+.master .image-container img {
+  width: 436px; /* Встановлюємо ширину зображення */
+  height: 314px; /* Зберігаємо пропорції зображення */
+  left: 679px;
+  top: 611px;
+  border-radius: 4px; /* Округлені кути для зображення */
+}
+
+/* Контейнер для тексту (по ліву сторону) */
+.master .text-container {
+  display: flex;
+  flex-direction: column; /* Вертикальне вирівнювання елементів */
+  justify-content: center; /* Центруємо по вертикалі */
+  margin-right: 20px; /* Відступ між текстом і зображенням */
+}
+
+/* Стилі для заголовка */
 .master h2 {
-  font-size: 24px;
+  font-size: 29px;
   margin-bottom: 10px;
-  color: #1F1E25; /* Зробимо текст світлим, щоб було видно на темному фоні */
+  color: #1F1E25; /* Зробимо текст темним для контрасту */
 }
 
 /* Стилі для тексту в абзаці */
 .master p {
   font-size: 16px;
-  color: #707C87; /* Зробимо текст світлим */
+  color: #707C87;
   margin-bottom: 20px;
-  /* word-wrap: break-word; /* Автоматичний переніс слів */
-  /* white-space: normal; /* Розбиваємо текст на кілька рядків */
 }
 
-
-.master input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px; /* Відступ між полем вводу та кнопкою */
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
+/* Стилі для кнопки */
 .master .master-button {
-  width: 234px; /* Ширина кнопки */
-  height: 53px; /* Висота кнопки */
-  border-radius: 4px; /* Радіус кута кнопки */
+  width: 234px;
+  height: 53px;
+  border-radius: 4px;
   background-color: #007bff;
   color: #F6F7FF;
   border: none;
   font-size: 16px;
   cursor: pointer;
-  margin-top: 20px; /* Додаємо відступ зверху, щоб кнопка не прилипала до інших елементів */
+  margin-top: 20px;
 }
 
-.master .convert-button:hover {
+/* Hover ефект для кнопки */
+.master .master-button:hover {
   background-color: #0056b3;
 }

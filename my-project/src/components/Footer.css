@@ -1,64 +1,117 @@
-/* Стилі для футера */
+/* Основні стилі футера */
 .footer {
   width: 100%;
-  max-width: 1366px; /* Максимальна ширина футера */
-  background-color: #F6F7FF; /* Світлий фон, як в хедері */
-  padding: 20px; /* Відступи всередині футера */
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Тінь, щоб додати глибини */
-  margin: 0 auto; /* Центруємо футер */
+  max-width: 1366px;
+  background-color: #F6F7FF;
+  padding: 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
   display: flex;
-  flex-direction: column; /* Вертикальне вирівнювання елементів */
-  gap: 20px; /* Відстань між блоками */
-  align-items: center; /* Центруємо елементи по горизонталі */
-  text-align: center; /* Текст по центру */
+  justify-content: space-between; /* Розподіляємо колонки рівномірно */
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap; /* Адаптивність */
+  gap: 20px;
 }
 
-/* Стилі для логотипа */
-.footer .logo {
+/* Оформлення колонок */
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Логотип */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vector-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.logo {
   font-size: 24px;
-  color: #1F1E25; /* Темний колір для логотипа */
+  color: #1F1E25;
   font-weight: bold;
 }
 
-/* Стилі для адреси та ліцензії */
-.footer div {
-  font-size: 14px; /* Трохи менший шрифт для адреси та ліцензії */
-  color: #707C87; /* Темний колір для контрасту */
+/* Інформація поруч із логотипом */
+.logo-container .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  color: #707C87;
+  margin-left: 10px;
 }
 
-/* Стилі для списку послуг */
-.footer .services ul {
-  list-style: none; /* Вимикаємо стандартні маркери */
+/* Стилі для текстових блоків */
+.column div {
+  font-size: 14px;
+  color: #707C87;
+}
+
+/* Послуги */
+.services ul {
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  gap: 20px; /* Відстань між пунктами списку */
+  flex-direction: column;
+  gap: 10px;
 }
 
-.footer .services ul li {
+.services ul li {
   font-size: 16px;
-  color: #707C87; /* Темний колір для тексту */
-  cursor: pointer; /* Покажчик для елементів списку */
+  color: #707C87;
+  cursor: pointer;
   transition: color 0.3s ease;
 }
 
-.footer .services ul li:hover {
-  color: #2C36F2; /* Зміна кольору при наведенні */
+.services ul li:hover {
+  color: #2C36F2;
 }
 
-/* Стилі для соціальних мереж */
-.footer .socials {
+/* Колонки з підтримкою та інформацією про дзвінки */
+.support,
+.phone-info {
   display: flex;
-  gap: 20px; /* Відстань між іконками соціальних мереж */
-  font-size: 16px;
-  color: #707C87; /* Темний колір для іконок */
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
-.footer .socials span {
-  cursor: pointer; /* Покажчик на іконки */
-  transition: color 0.3s ease;
+.support .phone {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1F1E25;
 }
 
-.footer .socials span:hover {
-  color: #2C36F2; /* Зміна кольору при наведенні */
+.support .support-text,
+.phone-info div {
+  font-size: 14px;
+  color: #707C87;
+}
+
+/* Соціальні мережі в один рядок */
+.socials {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+/* Стилі для іконок соціальних мереж */
+.social-icon {
+  width: 9px; /* Зроблено однаковим для всіх іконок */
+  height: 16px; /* Іконки будуть квадратними */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Легке збільшення при наведенні */
 }
