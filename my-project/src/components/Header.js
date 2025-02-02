@@ -1,11 +1,16 @@
 import React from 'react';
 import './Header.css'; // Підключення стилів
 import { ReactComponent as UserIcon } from '../assets/Vector.svg'; // Імпортуємо SVG як компонент
+import vectorIcon from '../assets/Vector1.png'; // Імпортуємо зображення PNG для іконки
 
 function Header() {
   return (
     <div className="header">
-      <div className="logo">Чіп Челендж</div>
+      <div className="logo">
+        {/* Додаємо зображення перед текстом логотипу */}
+        <img src={vectorIcon} alt="Logo Icon" className="logo-icon" />
+        Чіп Челендж
+      </div>
       <div className="nav">
         <a href="/">Послуги</a>
         <a href="/about">Конвертор валют</a>

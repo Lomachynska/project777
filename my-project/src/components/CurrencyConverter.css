@@ -1,3 +1,4 @@
+/* Стилі для контейнера CurrencyConverter */
 .currency-converter {
   width: 100%;
   max-width: 1366px;
@@ -9,28 +10,39 @@
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin: 0 auto; /* Центруємо контейнер */
-  text-align: left;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-
-  margin-top: 0; /* Видалити або зменшити відступ зверху */
+  display: flex; /* Використовуємо flexbox для вирівнювання */
+  justify-content: center; /* Центруємо елементи по горизонталі */
+  align-items: center; /* Центруємо елементи по вертикалі */
+  text-align: center; /* Вирівнюємо текст по центру */
+  margin-top: 2px; /* Відступ зверху */
+  flex-wrap: wrap; /* Дозволяємо елементам переноситися на новий рядок */
 }
 
+/* Стилі для текстового блоку */
+.currency-converter .converter-content {
+  flex: 1; /* Текстовий блок займає залишкову ширину */
+  margin-right: 20px; /* Відступ між текстом та зображенням */
+  display: flex; /* Використовуємо flex для правильного вирівнювання елементів */
+  flex-direction: column; /* Вирівнюємо елементи по вертикалі */
+  justify-content: center; /* Центруємо по вертикалі */
+  align-items: center; /* Центруємо по горизонталі */
+}
+
+/* Стилі для заголовка */
 .currency-converter h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: white; /* Зробимо текст світлим, щоб було видно на темному фоні */
+  color: white; /* Світлий текст для контрасту */
 }
 
+/* Стилі для тексту */
 .currency-converter p {
   font-size: 16px;
-  color: white; /* Зробимо текст світлим */
+  color: white; /* Світлий текст */
   margin-bottom: 20px;
 }
 
+/* Стилі для вводу */
 .currency-converter input {
   width: 100%;
   padding: 10px;
@@ -39,6 +51,7 @@
   border-radius: 4px;
 }
 
+/* Стилі для кнопки */
 .currency-converter .convert-button {
   width: 234px; /* Ширина кнопки */
   height: 53px; /* Висота кнопки */
@@ -51,3 +64,16 @@
   margin-top: 20px; /* Додаємо відступ зверху, щоб кнопка не прилипала до інших елементів */
 }
 
+/* Стилі для зображення */
+.currency-converter .converter-image {
+  flex-shrink: 0; /* Не дозволяємо зображенню стискатись */
+  display: flex; /* Використовуємо flexbox */
+  justify-content: center; /* Центруємо зображення по горизонталі */
+  align-items: center; /* Центруємо зображення по вертикалі */
+}
+
+.currency-converter .converter-image img {
+  max-width: 300px; /* Максимальна ширина зображення */
+  height: auto; /* Автоматичне збереження пропорцій */
+  border-radius: 8px; /* Радіус кута для зображення */
+}
