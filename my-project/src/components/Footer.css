@@ -7,22 +7,25 @@
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* Розподіляємо колонки рівномірно */
-  align-items: center;
-  text-align: center;
+  justify-content: center; /* Розташування колонок по центру */
+  align-items: flex-start; /* Вирівнювання елементів по верху */
+  text-align: left; /* Вирівнювання тексту в колонках */
   flex-wrap: wrap; /* Адаптивність */
-  gap: 20px;
+  gap: 30px;
 }
 
 /* Оформлення колонок */
 .column {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; /* Вирівнювання колонок по лівому краю */
+  flex-grow: 1; /* Розтягування колонок по ширині */
+  min-width: 200px; /* Мінімальна ширина для колонок */
+  max-width: 280px; /* Максимальна ширина для колонок */
 }
 
-/* Логотип */
-.logo-container {
+/* Логотип і текст в одну стрічку */
+.logo-row {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -81,7 +84,7 @@
 .phone-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 5px;
 }
 

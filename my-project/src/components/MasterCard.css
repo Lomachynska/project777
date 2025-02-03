@@ -12,6 +12,7 @@
   margin: 0 auto; /* Центруємо контейнер */
   text-align: left;
 
+
   display: flex;
   justify-content: center; /* Центруємо контент всередині */
   align-items: center; /* Вирівнюємо по вертикалі */
@@ -44,7 +45,7 @@
   display: flex;
   flex-direction: column; /* Вертикальне вирівнювання елементів */
   justify-content: center; /* Центруємо по вертикалі */
-  margin-right: 20px; /* Відступ між текстом і зображенням */
+  margin-right: 60px; /* Відступ між текстом і зображенням */
 }
 
 /* Стилі для заголовка */

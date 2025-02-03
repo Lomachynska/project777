@@ -13,8 +13,10 @@ function Footer() {
     <footer className="footer">
       {/* Перший стовпчик: Логотип та інформація */}
       <div className="column logo-container">
-        <img src={vectorIcon} alt="Vector Icon" className="vector-icon" />
-        <span className="logo">Чіп Чендж</span>
+        <div className="logo-row">
+          <img src={vectorIcon} alt="Vector Icon" className="vector-icon" />
+          <span className="logo">Чіп Чендж</span>
+        </div>
         <div className="info">
           <div>04128, м.Київ, вул. Хрещатик, 19</div>
           <div>Ліцензія НБУ №156</div>
