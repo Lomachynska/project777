@@ -41,7 +41,7 @@ function Footer() {
 
       {/* Четвертий стовпчик: Телефон для дзвінків */}
       <div className="column phone-info">
-        <div>8 800 111 22 33</div>
+        <div className='phone-two'>8 800 111 22 33</div>
         <div>Безкоштовно для дзвінків</div>
         <div>в межах України</div>
       </div>
