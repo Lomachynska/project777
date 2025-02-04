@@ -23,7 +23,6 @@
   font-size: 24px;
   color: #1F1E25;
   font-weight: bold;
-  position: absolute;
   left: 20px; /* Встановлюємо логотип зліва */
 }
 
@@ -60,7 +59,6 @@
   align-items: center; /* Центруємо іконку та текст по вертикалі */
   gap: 10px; /* Відстань між іконкою та текстом */
   justify-content: flex-end; /* Вирівнюємо кнопку та текст до правого краю */
-  position: absolute;
   right: 20px; /* Встановлюємо контейнер праворуч */
 }
 
@@ -69,22 +67,16 @@
   display: flex;
   align-items: center; /* Центруємо іконку по вертикалі */
   justify-content: center; /* Центруємо іконку по горизонталі */
-  color: #F6F7FF; /* Білий текст */
+  color: #4c4c50; /* Білий текст */
   padding: 10px 20px; /* Відступи всередині кнопки */
-  border-radius: 4px; /* Радіус кута */
+
   font-size: 16px;
   text-decoration: none; /* Без підкреслення */
   height: 100%; /* Висота кнопки на всю висоту контейнера header */
   width: auto; /* Кнопка має автоматичну ширину */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для кнопки */
   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Анімація для hover */
 }
 
-/* Зміна кольору при наведенні на кнопку */
-.header .cabinet-link:hover {
-  background-color: #0056b3; /* Змінюється колір при наведенні */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Тінь при наведенні */
-}
 
 /* Стилі для іконки в кнопці */
 .header .cabinet-link svg {

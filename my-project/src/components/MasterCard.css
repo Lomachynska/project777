@@ -76,6 +76,6 @@
 }
 
 /* Hover ефект для кнопки */
-.master .master-button:hover {
+.master-button:hover {
   background-color: #2d3176;
 }

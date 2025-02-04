@@ -1,5 +1,6 @@
 import React from 'react';
-import './Footer.css'; // Стилі для футера
+import './Footer.css';
+ // Стилі для футера
 
 // Імпортуємо зображення з урахуванням правильного регістру в назвах файлів
 import vectorIcon from '../assets/Vector1.png';
