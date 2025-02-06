@@ -1,7 +1,7 @@
 // src/components/MasterCard.js
 import React from 'react';
 import './MasterCard.css'; // Стилі для конвертера валют
-import groupImage from '../assets/Group78.png'; // Імпортуємо картинку
+import groupImage from '../assets/Group78.png'; // Імпорт картинки
 
 function MasterCard() {
   return (
