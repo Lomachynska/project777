@@ -11,7 +11,7 @@
   align-items: flex-start; /* Вирівнювання елементів по верху */
   text-align: left; /* Вирівнювання тексту в колонках */
   flex-wrap: wrap; /* Адаптивність */
-  gap: 30px;
+  gap: 75px;
 }
 
 /* Оформлення колонок */
@@ -28,7 +28,8 @@
 .logo-row {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
+
 }
 
 .vector-icon {
@@ -47,6 +48,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 10px;
   font-size: 14px;
   color: #707C87;
   margin-left: 10px;
@@ -80,7 +82,18 @@
 }
 
 /* Колонки з підтримкою та інформацією про дзвінки */
-.support,
+
+.phone-container {
+  display: flex;
+  align-items: center; /* Вирівнює по центру */
+}
+
+.vector-phone {
+  width: 10px; 
+  height: 16px;
+  margin-right: 8px; /* Відступ між іконкою та текстом */
+}
+
 .phone-info {
   display: flex;
   flex-direction: column;
@@ -88,25 +101,41 @@
   gap: 5px;
 }
 
-.support .phone {
+.phone {
   font-size: 18px;
   font-weight: bold;
   color: #1F1E25;
 }
 
-.support .support-text,
-.phone-info div {
-  font-size: 14px;
+.support-text {
   color: #707C87;
+  margin-top: 10px;
 }
 
+.column phone-info {
+  color: #707C87;
+}
+  
 .phone-two {
   color: #1F1E25;
   font-size: 20px;
   font-weight: bold;
 }
 
+.phone-row {
+  display: flex;         /* Робимо рядок */
+  align-items: center;   /* Вирівнюємо по вертикалі */
+  gap: 10px;            /* Відступ між іконкою та номером */
+}
 
+.vector-phone2 {
+  width: 16px;  /* Налаштуйте розмір іконки */
+  height: auto;
+}
+
+.sup-text2 {
+  margin-top: 4px;
+}
 
 /* Соціальні мережі в один рядок */
 .socials {
