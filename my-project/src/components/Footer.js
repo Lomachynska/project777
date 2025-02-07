@@ -3,13 +3,14 @@ import './Footer.css';
  // Стилі для футера
 
 // Імпортуємо зображення з урахуванням правильного регістру в назвах файлів
-import vectorIcon from '../assets/Vector1.png';
+
 import facebookIcon from '../assets/facebook.png';
 import instagramIcon from '../assets/instagram.png';
 import twitterIcon from '../assets/twitter.png';
 import youtubeIcon from '../assets/YouTube.png';
 import vectorPhone from '../assets/phone.png'
 import vectorPhone2 from '../assets/phone2.png'
+import Logo from './Logo';
  
 
 function Footer() {
@@ -18,8 +19,7 @@ function Footer() {
       {/* Перший стовпчик: Логотип та інформація */}
       <div className="column logo-container">
         <div className="logo-row">
-          <img src={vectorIcon} alt="Vector Icon" className="vector-icon" />
-          <span className="logo">Чіп Чендж</span>
+          <Logo />
         </div>
         <div className="info">
           <div>04128, м.Київ, вул. Хрещатик, 19</div>
