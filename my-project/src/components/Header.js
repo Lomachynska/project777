@@ -7,7 +7,6 @@ function Header() {
   return (
     <div className="header">
       <Logo/>
-
       <div className="nav">
         <a href="/">Послуги</a>
         <a href="/about">Конвертор валют</a>

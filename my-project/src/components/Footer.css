@@ -32,19 +32,14 @@
 
 }
 
-.vector-icon {
-  width: 24px;
-  height: 24px;
-}
-
 .logo {
   font-size: 24px;
   color: #1F1E25;
   font-weight: bold;
 }
 
-/* Інформація поруч із логотипом */
-.logo-container .info {
+/* Перший стовпчик Лого */
+.info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -52,15 +47,10 @@
   font-size: 14px;
   color: #707C87;
   margin-left: 10px;
+  gap: 2px;
 }
 
-/* Стилі для текстових блоків */
-.column div {
-  font-size: 14px;
-  color: #707C87;
-}
-
-/* Послуги */
+/* Другий стовпчик Меню */
 .services ul {
   list-style: none;
   padding: 0;
@@ -81,8 +71,8 @@
   color: #2C36F2;
 }
 
-/* Колонки з підтримкою та інформацією про дзвінки */
 
+/* Третій стовпчик: Телефон для дзвінків */
 .phone-container {
   display: flex;
   align-items: center; /* Вирівнює по центру */
@@ -91,14 +81,7 @@
 .vector-phone {
   width: 10px; 
   height: 16px;
-  margin-right: 8px; /* Відступ між іконкою та текстом */
-}
-
-.phone-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
+  margin-right: 20px; /* Відступ між іконкою та текстом */
 }
 
 .phone {
@@ -110,16 +93,24 @@
 .support-text {
   color: #707C87;
   margin-top: 10px;
+  margin-left: 30px;
+
 }
 
-.column phone-info {
+/* Четвертий стовпчик: Телефон для дзвінків */
+.phone-info {
   color: #707C87;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
 }
   
 .phone-two {
   color: #1F1E25;
   font-size: 20px;
   font-weight: bold;
+  margin-left: 25px;
 }
 
 .phone-row {
@@ -128,14 +119,20 @@
   gap: 10px;            /* Відступ між іконкою та номером */
 }
 
-.vector-phone2 {
-  width: 16px;  /*  розмір іконки */
-  height: auto;
-}
-
+/*Безкоштовно для дзвінків */
 .sup-text2 {
   margin-top: 4px;
+  color: #707C87;
+  margin-left: 45px;
 }
+
+/* в межах України */
+.sup-text3 {
+  margin-top: 4px;
+  color: #707C87;
+  margin-left: 45px;
+}
+
 
 /* Соціальні мережі в один рядок */
 .socials {
@@ -143,6 +140,7 @@
   gap: 20px;
   flex-direction: row;
 }
+
 
 /* Стилі для іконок соціальних мереж */
 .social-icon {
