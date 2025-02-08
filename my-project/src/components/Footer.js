@@ -5,31 +5,32 @@ import facebookIcon from '../assets/facebook.png';
 import instagramIcon from '../assets/instagram.png';
 import twitterIcon from '../assets/twitter.png';
 import youtubeIcon from '../assets/YouTube.png';
-import vectorPhone from '../assets/phone.png'
-import vectorPhone2 from '../assets/phone2.png'
+import vectorPhone from '../assets/phone.png';
+import vectorPhone2 from '../assets/phone2.png';
 import Logo from './Logo';
-
+import { Link } from 'react-router-dom'; // Імпортуємо Link для навігації
 
 function Footer() {
   return (
     <footer className="footer">
       {/* Перший стовпчик: Логотип та інформація */}
       <div className="column logo-container">
-      <Logo />
+        <Logo />
         <div className="info">
-          <div>04128, м.Київ, вул. Хрещатик, 19</div>
-          <div>Ліцензія НБУ №156</div>
-          <div>Ⓒ ПАТ ЧіпЧендж, 2019-2023</div>
+        <div> 04128, м.Київ, вул. Хрещатик,<br />
+        19 Ліцензія НБУ №156 <br />
+        ПАТ ЧіпЧендж, 2019-2023
+        </div>
         </div>
       </div>
 
       {/* Другий стовпчик: Послуги */}
-      <div className="services">
+      <div className="column services">
         <ul>
-          <li>Послуги</li>
-          <li>Конвертер валют</li>
-          <li>Контакти</li>
-          <li>Задати питання</li>
+          <li><Link to="/services">Послуги</Link></li>
+          <li><Link to="/about">Конвертер валют</Link></li>
+          <li><Link to="/contacts">Контакти</Link></li>
+          <li><Link to="/contact">Задати питання</Link></li>
         </ul>
       </div>
 
@@ -42,7 +43,6 @@ function Footer() {
         <div className="support-text">Цілодобова підтримка</div>
       </div>
 
-
       {/* Четвертий стовпчик: Телефон для дзвінків */}
       <div className="phone-info">
         <div className="phone-row">
@@ -52,7 +52,6 @@ function Footer() {
         <div className="sup-text2">Безкоштовно для дзвінків</div>
         <div className="sup-text3">в межах України</div>
       </div>
-
 
       {/* П'ятий стовпчик: Соціальні мережі (без посилань) */}
       <div className="column socials">

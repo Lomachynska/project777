@@ -1,4 +1,8 @@
 /* Основні стилі футера */
+a {
+  text-decoration: none;
+}
+
 .footer {
   width: 100%;
   max-width: 1366px;
@@ -11,7 +15,7 @@
   align-items: flex-start; /* Вирівнювання елементів по верху */
   text-align: left; /* Вирівнювання тексту в колонках */
   flex-wrap: wrap; /* Адаптивність */
-  gap: 75px;
+  gap: 65px;
 }
 
 /* Оформлення колонок */
@@ -40,13 +44,20 @@
 /* Перший стовпчик Лого */
 .info {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: column; /* Визначаємо, що елементи розташовуватимуться в стовпчик */
+  align-items: flex-start; /* Вирівнюємо елементи по лівому краю */
   margin-top: 10px;
   font-size: 14px;
   color: #707C87;
-  margin-left: 10px;
-  gap: 2px;
+  margin-left: 5px; /* Відступ з лівого боку */
+  gap: 2px; /* Відстань між елементами */
+}
+
+.column.logo-container {
+  display: flex;
+  flex-direction: column; /* Визначаємо, що елементи будуть в стовпчик */
+  align-items: flex-start; /* Вирівнюємо всі елементи по лівому краю */
+  gap: 5px; /* Між елементами буде невеликий відступ */
 }
 
 /* Другий стовпчик Меню */
@@ -129,7 +140,7 @@
 .sup-text3 {
   margin-top: 4px;
   color: #707C87;
-  margin-left: 45px;
+  margin-left: 46px;
 }
 
 
@@ -141,10 +152,11 @@
   height: 16px; 
   transition: transform 0.3s ease;
   cursor: pointer;
-  gap: 10px;
+  gap: 8px;
 }
 
 
 .social-icon:hover {
   transform: scale(1.1); /* Легке збільшення при наведенні */
 }
+
