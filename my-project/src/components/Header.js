@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Імпортуємо Link для навігації
 import './Header.css'; // Підключення стилів
 import { ReactComponent as UserIcon } from '../assets/Vector.svg'; // Імпортуємо SVG як компонент
 import Logo from './Logo';
@@ -6,12 +7,12 @@ import Logo from './Logo';
 function Header() {
   return (
     <div className="header">
-      <Logo/>
+      <Logo /> {/* Логотип */}
       <div className="nav">
-        <a href="/">Послуги</a>
-        <a href="/about">Конвертор валют</a>
-        <a href="/services">Контакти</a>
-        <a href="/contact">Задати питання</a>
+        <Link to="/services">Послуги</Link> {/* Посилання на послуги */}
+        <Link to="/about">Конвертор валют</Link> {/* Посилання на конвертер валют */}
+        <Link to="/contacts">Контакти</Link> {/* Посилання на контакти */}
+        <Link to="/contact">Задати питання</Link> {/* Посилання на задавання питання */}
       </div>
       <div className="cabinet-container">
         <a href="/cabinet" className="cabinet-link">

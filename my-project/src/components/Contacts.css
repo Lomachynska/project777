@@ -1,0 +1,18 @@
+.contacts-page {
+  text-align: center;
+}
+
+/* Для .info - розміщення в рядок та по центру */
+.info {
+  display: flex;
+  justify-content: center; /* Вирівнюємо елементи по центру */
+  align-items: center; /* Вертикально вирівнюємо елементи по центру */
+  margin-top: 20px; /* Відступ зверху від контейнера */
+  margin-bottom: 20px; /* Відступ знизу від контейнера */
+}
+
+/* елементи були в одному рядку */
+.info > div {
+  display: flex;
+  gap: 20px; /* Відстань між елементами */
+}

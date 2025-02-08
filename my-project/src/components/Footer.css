@@ -20,8 +20,7 @@
   flex-direction: column;
   align-items: flex-start; /* Вирівнювання колонок по лівому краю */
   flex-grow: 1; /* Розтягування колонок по ширині */
-  min-width: 200px; /* Мінімальна ширина для колонок */
-  max-width: 280px; /* Максимальна ширина для колонок */
+
 }
 
 /* Логотип і текст в одну стрічку */
@@ -33,7 +32,7 @@
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 23px;
   color: #1F1E25;
   font-weight: bold;
 }
@@ -137,18 +136,14 @@
 /* Соціальні мережі в один рядок */
 .socials {
   display: flex;
-  gap: 20px;
   flex-direction: row;
-}
-
-
-/* Стилі для іконок соціальних мереж */
-.social-icon {
   width: 9px; /* Зроблено однаковим для всіх іконок */
-  height: 16px; /* Іконки будуть квадратними */
+  height: 16px; 
   transition: transform 0.3s ease;
   cursor: pointer;
+  gap: 10px;
 }
+
 
 .social-icon:hover {
   transform: scale(1.1); /* Легке збільшення при наведенні */
