@@ -4,10 +4,8 @@
     font-size: 23px;
     color: #1F1E25;
     font-weight: bold;
-    display: flex;
-    align-items: center;
-    font-size: 24px;
     font-weight: bold;
     left: 20px;
+    display: flex; /* Логотип і текст в одну стрічку */
+    align-items: center;
 }
-

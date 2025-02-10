@@ -24,17 +24,9 @@ a {
   flex-direction: column;
   align-items: flex-start; /* Вирівнювання колонок по лівому краю */
   flex-grow: 1; /* Розтягування колонок по ширині */
-
 }
 
-/* Логотип і текст в одну стрічку */
-.logo-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-
-}
-
+/* Логотип */
 .logo {
   font-size: 23px;
   color: #1F1E25;
@@ -57,7 +49,6 @@ a {
   display: flex;
   flex-direction: column; /* Визначаємо, що елементи будуть в стовпчик */
   align-items: flex-start; /* Вирівнюємо всі елементи по лівому краю */
-  gap: 5px; /* Між елементами буде невеликий відступ */
 }
 
 /* Другий стовпчик Меню */

@@ -1,24 +1,31 @@
-import React from 'react';
-import { Link } from 'react-router-dom'; // Імпортуємо Link для навігації
-import './Header.css'; // Підключення стилів
-import { ReactComponent as UserIcon } from '../assets/Vector.svg'; // Імпортуємо SVG як компонент
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Header.css';
+import { ReactComponent as UserIcon } from '../assets/Vector.svg'; 
 import Logo from './Logo';
 
+
 function Header() {
+  const [showCurrency, setShowCurrency] = useState(false);
+
+  const handleCurrencyClick = () => {
+    setShowCurrency(!showCurrency);
+  };
+
   return (
     <div className="header">
-      <Logo /> {/* Логотип */}
+      <Logo />
       <div className="nav">
-        <Link to="/services">Послуги</Link> {/* Посилання на послуги */}
-        <Link to="/about">Конвертор валют</Link> {/* Посилання на конвертер валют */}
-        <Link to="/contacts">Контакти</Link> {/* Посилання на контакти */}
-        <Link to="/contact">Задати питання</Link> {/* Посилання на задавання питання */}
+        <Link to="/services">Послуги</Link>
+        <Link to="/about">Конвертер валют</Link>
+        <Link to="/contacts">Контакти</Link>
+        <Link to="/contact" onClick={handleCurrencyClick}>Задати питання</Link>
       </div>
       <div className="cabinet-container">
         <a href="/cabinet" className="cabinet-link">
-          <UserIcon /> {/* Вставляємо SVG компонент */}
+          <UserIcon />
         </a>
-        <span>Особистий кабінет</span> {/* Текст без кліка */}
+        <span>Особистий кабінет</span>
       </div>
     </div>
   );

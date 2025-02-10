@@ -24,8 +24,7 @@ function Contacts() {
             <img src={vectorPhone2} alt="Vector Phone2" className="vector-phone2" />
             <span className="phone-two">8 800 111 22 33</span>
           </div>
-          <div className="sup-text2">Безкоштовно для дзвінків</div>
-          <div className="sup-text3">в межах України</div>
+          <div className="sup-text2">Безкоштовно для дзвінків в межах України</div>
         </div>
 
       </div>

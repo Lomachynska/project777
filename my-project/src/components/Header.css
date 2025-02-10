@@ -13,7 +13,7 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легка тінь для меню */
   margin: 0 auto; /* Центруємо контейнер по горизонталі */
   position: relative; /* Позиціюємо контейнер відносно */
-  justify-content: center; /* Центруємо все по горизонталі */
+  justify-content: space-between; /* Вирівнюємо елементи по горизонталі */
 }
 
 /* Стилі для логотипу */
@@ -23,9 +23,9 @@
   font-size: 24px;
   color: #1F1E25;
   font-weight: bold;
-  left: 20px; /* Встановлюємо логотип зліва */
 }
 
+/* Стилі для іконки логотипу */
 .header .logo .logo-icon {
   width: 23px; /* Розмір іконки */
   height: 23px; /* Розмір іконки */
@@ -53,30 +53,29 @@
   color: #2C36F2; /* Зміна кольору тексту на #2C36F2 */
 }
 
-/* Стилі для контейнера кнопки "Особливий кабінет" */
+/* Стилі для контейнера кнопки "Особистий кабінет" */
 .header .cabinet-container {
   display: flex;
   align-items: center; /* Центруємо іконку та текст по вертикалі */
   gap: 10px; /* Відстань між іконкою та текстом */
   justify-content: flex-end; /* Вирівнюємо кнопку та текст до правого краю */
-  right: 20px; /* Встановлюємо контейнер праворуч */
+  margin-left: auto; /* Залишаємо місце для навігації та логотипу */
+  margin-right: 20px; /* Відступ праворуч */
 }
 
-/* Стилі для кнопки "Особливий кабінет" */
+/* Стилі для кнопки "Особистий кабінет" */
 .header .cabinet-link {
   display: flex;
   align-items: center; /* Центруємо іконку по вертикалі */
   justify-content: center; /* Центруємо іконку по горизонталі */
   color: #4c4c50; /* Білий текст */
   padding: 10px 20px; /* Відступи всередині кнопки */
-
   font-size: 16px;
   text-decoration: none; /* Без підкреслення */
   height: 100%; /* Висота кнопки на всю висоту контейнера header */
   width: auto; /* Кнопка має автоматичну ширину */
   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Анімація для hover */
 }
-
 
 /* Стилі для іконки в кнопці */
 .header .cabinet-link svg {
@@ -87,10 +86,9 @@
   margin-right: 8px; /* Відступ між іконкою і текстом */
 }
 
-/* Текст "Особливий кабінет" */
+/* Текст "Особистий кабінет" */
 .header .cabinet-container span {
   font-size: 16px; /* Розмір шрифту для тексту */
   color: #1F1E25; /* Темний колір для тексту */
   font-weight: bold;
 }
-
