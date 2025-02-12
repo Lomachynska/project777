@@ -4,7 +4,7 @@
     font-size: 23px;
     color: #1F1E25;
     font-weight: bold;
-    font-weight: bold;
+    font-family: 'Work Sans', sans-serif; /* Задаємо шрифт Work Sans */
     left: 20px;
     display: flex; /* Логотип і текст в одну стрічку */
     align-items: center;

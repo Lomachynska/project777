@@ -7,7 +7,7 @@ function MasterCard() {
   const navigate = useNavigate(); // Використовуємо useNavigate для навігації
 
   const handleClick = () => {
-    navigate('/about'); // Перехід на сторінку конвертера валют
+    navigate('/mastercard-button'); // Перехід на сторінку MasterCardButton
   };
 
   return (
@@ -16,7 +16,9 @@ function MasterCard() {
         <div className="text-container">
           <h2>Конвертер валют</h2>
           <p>Переважна діяльність банківської <br /> групи за останні чотири звітні квартали <br /> становить 50 і більше відсотків.</p>
-          <button className="master-button" onClick={handleClick}>Конвертувати валюту</button> {/* Додаємо обробник на кнопку */}
+          <button className="master-button" onClick={handleClick}>
+            Конвертувати валюту
+          </button> {/* Додаємо обробник на кнопку для переходу на MasterCardButton */}
         </div>
         <div className="image-container">
           <img src={groupImage} alt="Group 78" />

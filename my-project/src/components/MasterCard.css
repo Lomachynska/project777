@@ -11,8 +11,6 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin: 0 auto; /* Центруємо контейнер */
   text-align: left;
-
-
   display: flex;
   justify-content: center; /* Центруємо контент всередині */
   align-items: center; /* Вирівнюємо по вертикалі */
@@ -29,7 +27,7 @@
 
 /* Контейнер для зображення (по праву сторону) */
 .master .image-container {
-  margin-left: 20px; /* Відступ між зображенням і текстом */
+  margin-left: 85px; /* Відступ між зображенням і текстом */
 }
 
 .master .image-container img {

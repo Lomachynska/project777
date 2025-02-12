@@ -16,21 +16,8 @@
   justify-content: space-between; /* Вирівнюємо елементи по горизонталі */
 }
 
-/* Стилі для логотипу */
-.header .logo {
-  display: flex;
-  align-items: center; /* Центруємо текст та іконку по вертикалі */
-  font-size: 24px;
-  color: #1F1E25;
-  font-weight: bold;
-}
 
-/* Стилі для іконки логотипу */
-.header .logo .logo-icon {
-  width: 23px; /* Розмір іконки */
-  height: 23px; /* Розмір іконки */
-  margin-right: 10px; /* Відступ між іконкою та текстом */
-}
+
 
 /* Стилі для навігаційних посилань */
 .header .nav {
@@ -92,3 +79,4 @@
   color: #1F1E25; /* Темний колір для тексту */
   font-weight: bold;
 }
+

@@ -4,7 +4,7 @@ export default function Logo() {
     return (
         <div className="logo">
             <img src={vectorIcon} alt="Logo Icon" className="logo-icon" />
-            Чіп Челендж
+            Чіп Чендж
         </div>
     )
 }

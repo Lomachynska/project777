@@ -1,9 +1,17 @@
 /* Імпортуємо шрифт Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Імпортуємо шрифт Work Sans */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
 /* Застосовуємо шрифт Roboto по всьому додатку */
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+/* Застосовуємо шрифт Work Sans для контейнера */
+.container {
+  font-family: 'Work Sans', sans-serif;
 }
 
 /* Стилі для великих екранів */
@@ -28,4 +36,3 @@ body {
 .item {
   flex: 1 1 200px; /* Задає мінімальний розмір елементів */
 }
-
