@@ -9,7 +9,7 @@ function Contacts() {
       <h2>Контакти</h2>
       <div className="info">
       <div>
-        {/* Третій стовпчик: Цілодобова підтримка */}
+        {/* Третій стовпчик: Цілодобова підтримка із футера*/}
         <div className="column support">
           <div className="phone-container">
             <img src={vectorPhone} alt="Vector Phone" className="vector-phone" />
@@ -18,7 +18,7 @@ function Contacts() {
           <div className="support-text">Цілодобова підтримка</div>
         </div>
 
-        {/* Четвертий стовпчик: Телефон для дзвінків */}
+        {/* Четвертий стовпчик: Телефон для дзвінків із футера */}
         <div className="phone-info">
           <div className="phone-row">
             <img src={vectorPhone2} alt="Vector Phone2" className="vector-phone2" />
